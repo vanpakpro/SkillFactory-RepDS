@@ -47,7 +47,7 @@ def score_game(random_predict) -> int:
     for number in random_array:
         count_list.append(random_predict(number))
         score = int(np.mean(count_list)) # вычисляем среднее кол-во попыток
-        print(f'Программа угадывает число в среднем за {score} попыток')
+        print(f'Программа угадывает число в среднем за {score} попытки')
         break
     
     return score 
