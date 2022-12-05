@@ -15,19 +15,16 @@ def random_predict(number: int = 1)-> int:
     """
     
     start_number = 1
-    end_number = 100
+    end_number = 101
     count = 0
     
     while True:
         count += 1
-        predict_number =  (start_number + end_number)//2 # сужаем диапазон поиска
+        predict_number =  (start_number + end_number) // 2 # сужаем диапазон поиска
         if number > predict_number:
             start_number = predict_number
         elif number < predict_number:
             end_number = predict_number
-        elif count == 20:
-            print('Превышено количество попыток угадать число')
-            break
         else:
             break # число угадано
         
